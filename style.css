@@ -1,0 +1,175 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-family: 'poppins';
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ nav{
+    margin: 4em;
+ }
+ nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4.1rem;
+    margin: 0;
+ }
+ nav ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+ }
+ nav ul li a.active:before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 30%;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+ }
+ /* Hero Section */
+ main{
+    display: flex;
+    gap: 8em;
+    margin-top: 11em;
+ }
+ .right_col{
+    flex-grow: 1;
+ }
+  .left_col{
+    width: 45%;
+  }
+ h1{
+    font-size: 5.2rem;
+    font-family: 'playfair display';
+    font-weight: normal;
+    margin: 0;
+ }
+ .subhead{
+    font-size: 1.8rem;
+ }
+ .cta_btns{
+    
+    margin: 5em 0;
+ }
+ .cta_btns, .secondary_cta{
+ display: flex;
+ gap: 2em;
+ }
+ .secondary_cta{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+ }
+ .secondary_cta svg{
+    width: 20px;
+    transition: transform .3s;
+ }
+ .primary_cta{
+    font-size: 1.8rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #F1E2D1;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+ }
+ /*.........................news*/
+ .news{
+    display: flex;
+    gap: 3em;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: .8em;
+
+
+ }
+ .employee{
+    font-size: 3.3rem;
+    margin: 0;
+ }
+ .detail{
+    font-size:1.4rem ;
+    margin: 0;
+    font-weight: mixed;
+ }
+ /*.........................right-col*/
+ .right_col{
+    flex-grow: 1;
+ }
+ .right_col{
+   display: grid;
+   gap: 2.3em;
+   grid-template-columns: repeat(2,auto);
+   grid-template-areas: 
+   "left right"
+   "left bottom";
+ }
+ .card{
+    border-radius: .8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: 150%;
+    transition: background-size 800ms;
+    position: relative;
+ }
+ .card1{
+    grid-area: left;
+    background-image: url(image/clothing1.jpg);
+    position: relative;
+ }
+ .card1:before{
+    position: absolute;
+    content: "";
+    background: url(/image/tag.svg) no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: -30px;
+ }
+ .card2{
+    background-image: url(image/clothing2.jpg);
+ }
+ .card3{
+    background-image: url(image/clothing3.jpg);
+ }
+ .card_detail{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .6em;
+    padding: 2em;
+    width: 100%;
+}
+ 
+.card_detail a{
+   display: flex;
+}
+ .product_title{
+    font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+ }
+.card_detail p{
+   font-size: 1.4rem;
+   margin: 0;
+}
+.product_price p{
+   font-size: 1.4rem;
+}
